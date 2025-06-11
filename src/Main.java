@@ -4,10 +4,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
 import java.util.Objects;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Main extends Application {
+
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     public void start(Stage primaryStage) {
@@ -25,11 +33,7 @@ public class Main extends Application {
 
             primaryStage.show();
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Unexpected error", e);
         }
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

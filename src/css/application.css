@@ -1,0 +1,12 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+TableView {
+    -fx-background-color: #ffe9b0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ffe087;
+}

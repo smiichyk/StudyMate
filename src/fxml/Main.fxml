@@ -6,10 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="965.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <Tab text="Untitled Tab 1">
+<TabPane prefHeight="613.0" prefWidth="965.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <Tab text="Timetable">
         <AnchorPane prefHeight="200.0" prefWidth="200.0">
-            <TableView layoutY="10.0" prefHeight="572.0" prefWidth="965.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+            <TableView fx:id="tableView" layoutY="10.0" prefHeight="572.0" prefWidth="965.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
                 <columns>
                     <TableColumn prefWidth="75.0" text=" " />
                     <TableColumn prefWidth="75.0" text="9:00" />
@@ -31,7 +31,7 @@
             </TableView>
         </AnchorPane>
     </Tab>
-    <Tab text="Untitled Tab 2">
+    <Tab text="Inbox">
         <AnchorPane prefHeight="200.0" prefWidth="200.0" />
     </Tab>
 </TabPane>

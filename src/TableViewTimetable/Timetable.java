@@ -5,19 +5,19 @@ import javafx.beans.property.StringProperty;
 
 public class Timetable {
 
-    private final StringProperty name;
-    private final StringProperty hour9;
-    private final StringProperty hour10;
-    private final StringProperty hour11;
-    private final StringProperty hour12;
-    private final StringProperty hour13;
-    private final StringProperty hour14;
-    private final StringProperty hour15;
-    private final StringProperty hour16;
-    private final StringProperty hour17;
-    private final StringProperty hour18;
-    private final StringProperty hour19;
-    private final StringProperty hour20;
+    private final SimpleStringProperty name;
+    private final SimpleStringProperty hour9;
+    private final SimpleStringProperty hour10;
+    private final SimpleStringProperty hour11;
+    private final SimpleStringProperty hour12;
+    private final SimpleStringProperty hour13;
+    private final SimpleStringProperty hour14;
+    private final SimpleStringProperty hour15;
+    private final SimpleStringProperty hour16;
+    private final SimpleStringProperty hour17;
+    private final SimpleStringProperty hour18;
+    private final SimpleStringProperty hour19;
+    private final SimpleStringProperty hour20;
 
     public Timetable(String name, String hour9, String hour10, String hour11,
                      String hour12, String hour13, String hour14, String hour15,

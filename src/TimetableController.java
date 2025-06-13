@@ -68,5 +68,13 @@ public class TimetableController implements Initializable {
 
         // Set the data items into the TableView
         tableView.setItems(data);
+
+        for (TableColumn<?, ?> col : tableView.getColumns()) {
+
+            // Prevent the user from sorting the column by clicking its header
+            col.setSortable(false);
+            // Prevent the user from dragging and reordering the column
+            col.setReorderable(false);
+        }
     }
 }

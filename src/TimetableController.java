@@ -11,9 +11,18 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
 
+/**
+ * Controller class responsible for initializing and managing the timetable TableView UI.
+ * It maps FXML-defined columns to corresponding properties in the Timetable model and
+ * populates the table with default data for each day of the week.
+ */
+public class TimetableController implements Initializable {
+
+    // Reference to the TableView defined in the FXML
     @FXML private TableView<Timetable> tableView;
+
+    // References to each column in the timetable
     @FXML private TableColumn<Timetable, String> nameCol;
     @FXML private TableColumn<Timetable, String> col9;
     @FXML private TableColumn<Timetable, String> col10;
@@ -31,6 +40,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        // Bind each column to its corresponding property in the Timetable model
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         col9.setCellValueFactory(new PropertyValueFactory<>("hour9"));
         col10.setCellValueFactory(new PropertyValueFactory<>("hour10"));
